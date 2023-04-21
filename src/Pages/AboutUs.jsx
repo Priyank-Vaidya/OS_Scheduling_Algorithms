@@ -12,7 +12,7 @@ export const AboutUs = () => {
         id: 1,
         name:"Parth",
         lname:"Sood",
-        work:"Frontend and Connections",
+        work:"Frontend and Api's",
         linkedin:"https://www.linkedin.com/in/parth-sood/",
     },
     {
@@ -66,16 +66,16 @@ export const AboutUs = () => {
           
         </span>
     </div>
-    <div className="mt-6 w-fit mx-auto">
+    <div className="mt-6 w-fit mx-auto hover:scale-125 duration-700">
         <img src={img[members.id-1]} className="rounded-full w-full p-6 " alt="profile picture" srcset=""/>
     </div>
 
     <div className="mt-8 ">
         <h2 className="text-white font-bold text-2xl tracking-wide">{members.name} <br/> {members.lname}</h2>
     </div>
-    <p className="text-red-600 font-medium mt-2.5" >
+    {/* <p className="text-red-600 font-medium mt-2.5" >
         {members.work}
-    </p>
+    </p> */}
 
     
 

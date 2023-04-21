@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import {AiFillRobot} from 'react-icons/ai'
+ 
 // import {Icon} from "@iconify/react"
 
 export const Navbar = () => {
+ 
+
+
   const [open,notOpen] = useState(false);
   const [algOpen,algNotOpen] = useState(false);
   
@@ -23,11 +27,12 @@ export const Navbar = () => {
          </Link>
         </div>
         <div className="hidden md:flex justify-between duration-300 p-7 ml-auto text-[20px] lg:gap-10 lg:text-[22px]  z-40 ">                  
-            <div className='p-3 cursor-pointer hover:text-red-600'><Link to="/">Home</Link></div>
+            <div className='p-3 cursor-pointer hover:text-red-600 ' onClick={algOpen}><Link to="/">Home</Link></div>
             <div className='p-3 cursor-pointer hover:text-red-600' onClick={handleAlgo}>Algorithms
             </div>
             <div className='p-3 cursor-pointer hover:text-red-600'><Link to="/about">About us</Link></div>
-            <div className='p-3 cursor-pointer hover:text-red-600 mt-2'><AiFillRobot/></div>
+            {/* I have modified with the link below please check again */}
+            <div className='p-3 cursor-pointer hover:text-red-600 mt-2' ><Link to="/chatbot"><AiFillRobot/></Link></div>
         </div>
         <div className='navbar bg-[#131316] md:hidden p-2 cursor-pointer' onClick={handleClickHamb}>
         ▼
@@ -48,7 +53,7 @@ export const Navbar = () => {
             <div className='p-3 cursor-pointer duration-300 hover:text-red-600'><Link to="/">Home</Link></div>
             <div className='p-3 cursor-pointer duration-300 hover:text-red-600'>Algorithms</div>
             <div className='p-3 cursor-pointer duration-300 hover:text-red-600'><Link to="/about">About us</Link></div>
-            <div className='p-3 flex justify-center'><AiFillRobot/></div>
+            <div className='p-3 flex justify-center'><Link to="/chatB"><AiFillRobot/></Link></div>
         </div>
     </div>  
      

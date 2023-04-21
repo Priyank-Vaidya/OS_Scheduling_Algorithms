@@ -149,10 +149,10 @@ function reset(){
 
 
   return (
-    <div className='text-white  bg-[#131316] font-Gloock items-center'>
+    <div className='text-white  bg-[#19191c] font-Gloock items-center'>
 <Navbar/>
     {/* <!-- Main Algo Implementation Starts --> */}
-    <div className="container pt-5 justify-center">
+    <div className="container pt-5 justify-center bg-[#19191c]">
       <h2 className="text-center subheading text-[40px] p-7">BANKER'S ALGORITHM</h2>
     </div>
     <div className="container bg-green-500 ">

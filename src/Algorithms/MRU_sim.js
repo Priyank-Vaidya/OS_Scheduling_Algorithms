@@ -115,7 +115,7 @@ export function MRU_sim()
    
 
 return( //displaying the page
- <div className="font-Gloock bg-[#131316] pb-32 text-white h-full">
+ <div className="font-Gloock bg-[#19191c] pb-32 text-white h-full">
  <Navbar/>
  
 <div className="Heading text-[40px] flex justify-center" ><h1>MRU Algorithm</h1></div>
