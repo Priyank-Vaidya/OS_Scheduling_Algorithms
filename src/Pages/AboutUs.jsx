@@ -13,7 +13,7 @@ export const AboutUs = () => {
         name:"Parth",
         lname:"Sood",
         work:"Frontend and Api's",
-        linkedin:"https://www.linkedin.com/in/parth-sood/",
+        linkedin:"",
     },
     {
         id: 2,
